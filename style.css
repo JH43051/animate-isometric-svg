@@ -1,0 +1,64 @@
+html, body {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: #282a2c;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto;
+}
+
+svg {
+	align-self: center;
+	justify-self: center;
+	width: 300px;
+	margin-left: 500px;
+}
+
+svg #Logo {
+	opacity: 0;
+}
+
+svg:hover #Logo{
+	animation-duration: 1.2s;
+	animation-name: animateLogo;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes animateLogo {
+	/* Start from starting position with logo hidden */
+	from {
+		transform: translateX(0) translateY(0);
+		opacity: 0;
+	}
+
+	/* Slide right */
+	to {
+		transform: translateX(56px) translateY(-38px);
+		opacity: .6;
+	}
+}
+
+.st0{
+	fill:#E9E9E9;
+}
+
+.st1{
+	fill:#486885;
+}
+
+.st2{
+	fill:#7EB7E9;
+}
+
+.st3{
+	fill:#567C9E;
+}
+
+.st4{
+	fill:#9E9E9E;
+}
